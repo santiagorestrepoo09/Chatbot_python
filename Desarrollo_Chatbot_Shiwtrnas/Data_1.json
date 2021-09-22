@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hola" , "¿Cómo estás" , "¿Hay alguien ahí?" , "hola" , "HOLA" , "Buenas" , "Buen día"],
+         "responses": ["Hola, gracias por preguntar" , "Es bueno verte de nuevo" , "Hola, ¿en qué puedo ayudar?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Adiós" , "Hasta luego" , "Adiós" , "agradable charlar con usted, adiós" , "Hasta la próxima vez"],
+         "responses": ["¡Nos vemos!" , "Que tengas un buen día" , "¡Adiós! Vuelve pronto"   ],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Gracias" , "Gracias" , "Eso es útil" , "Genial, gracias" , "Gracias por ayudarme"],
+         "responses": ["¡Feliz de ayudar!" , "¡En cualquier momento!" , "Mi placer"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Lo siento, no puedo entenderte", "Por favor, dame más información", "No estoy seguro de entenderlo"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["¿Cómo podrías ayudarme?" , "¿Qué puedes hacer?" , "¿Qué ayuda brindas?" , "¿Cómo puede ser de ayuda?" , "Qué soporte se ofrece"],
+         "responses": ["Servicio al Cliente", "Consultar Servicios", "Reportar un problema"],
+         "context": [""]
+        },
+        {"tag": "customer_service_channel",
+         "patterns": ["Como puedo hablar con un acesor?", "abra el modulo de servicio al cliente", "Reportar un problema"],
+         "responses": ["Modulo de reporte de problema"],
+         "context": [""]
+        },
+        {"tag": "Channel_consult_services",
+         "patterns": ["Que servicios tienes", "Historial de cargue", "Seguimiento a carga", "Solicitar un servicio" ],
+         "responses": ["Navegando en el historial de carga"],
+         "context": [""]
+        },
+        {"tag": "Channel_problem",
+         "patterns": ["tengo problemas con ver mi cargamento", "No me deja ingresar a la app", "Tengo problemas al registrar un usuario", "se me olvido la contraseña","aplicaion" ],
+         "responses": ["Regaleme su nombre de usuario", "Regaleme su extencion"],
+         "context": ["Look_for_the_problem"]
+        },
+        {"tag": "Look_for_the_problem",
+         "patterns": [],
+         "responses": ["El problema que presenta es por la caida del BUS"],
+         "context": [""]
+        },
+        {"tag": "Cost_cencoscodigo",
+         "patterns": ["en contrar el centro de costo", "Encontrar mi centro de costo", "lista de centro de costo", "buscar centro de costo"],
+         "responses": ["Proporcione en nombre de la ciudad"],
+         "context": ["Cost_cencoscodigo_By_name"]
+        },
+        {"tag": "Cost_cencoscodigo_By_name",
+         "patterns": [],
+         "responses": ["Cargando Detalles de centro de costo"],
+         "context": [""]
+        },
+        {"tag": "Route_search",
+         "patterns": ["buscar la ruta", "buscar ruta para transferir usuario", "quiero buscar datos de mi ruta", "buscar rutas para mi carga", "ver detalles de mi carga" ],
+         "responses": ["Proporcione el nombre o la ubicacion del cargamento"],
+         "context": ["Route_search_By_name"]
+        },
+        {"tag": "Route_search_By_name",
+         "patterns": [],
+         "responses": ["indicame el tipo de cargamento"],
+         "context": ["Route_search_By_type"]
+        },
+        {"tag": "Route_search_By_type",
+         "patterns": [],
+         "responses": ["Cargando detalles del cargamento"],
+         "context": [""]
+        }
+   ]
+}
